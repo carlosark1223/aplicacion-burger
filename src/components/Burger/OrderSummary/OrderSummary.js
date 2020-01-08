@@ -4,11 +4,6 @@ import Aux from "../../../hoc/Auxiliar/auxiliar";
 import Button from "../../UI/Button/Button";
 
 class OrderSummary extends React.Component {
-  
-  UNSAFE_componentWillUpdate() {
-    console.log('[OrderSummary] UNSAFE_componentWillUpdate');
-  }
-
   render() {
    
     const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
